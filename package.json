@@ -1,0 +1,23 @@
+{
+  "name": "urlshortened",
+  "version": "1.0.0",
+  "description": "url shortened microservice from FCC challneges",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderHook/urlshortened.git"
+  },
+  "author": "coderHook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderHook/urlshortened/issues"
+  },
+  "homepage": "https://github.com/coderHook/urlshortened#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.14.0"
+  }
+}
