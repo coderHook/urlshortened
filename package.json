@@ -20,7 +20,7 @@
   "dependencies": {
     "colors": "^1.1.2",
     "express": "^4.14.0",
-    "mongoDB": "^2.6.12"
+    "mongodb": "^2.6.12"
   }
   
 }
