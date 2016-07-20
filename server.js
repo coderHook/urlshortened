@@ -59,6 +59,6 @@ app.get('/:shortened', (req, res)=>{
 }); //Here if someone introduce a shorturl we look for it, and if we have it, we redirect to the correct url
 
 
-app.listen(8080, () => console.log("Server running on port 8080 url: https://fcc-basejumps-abel1987.c9users.io" .green));
+app.listen(process.env.PORT || 8080, () => console.log("Server running on port 8080 url: https://fcc-basejumps-abel1987.c9users.io" .green));
 
 
