@@ -1,6 +1,10 @@
 {
   "name": "urlshortened",
   "version": "1.0.0",
+   "engines": {
+    "node": "5.3.x",
+    "npm": "3.3.x"
+  },
   "description": "url shortened microservice from FCC challneges",
   "main": "server.js",
   "scripts": {
