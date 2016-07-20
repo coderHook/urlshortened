@@ -30,12 +30,12 @@ app.get('/:prot://:primeurl', (req, res) => {
             if(docs.length == 0){
                 //If its 0 we can add it because its not in the db
                 myUrl.insert({"url": prot.concat('://' + primeurl ), "urlShort": 'https://fcc-basejumps-abel1987.c9users.io/' + shortened});
-                res.send({"url": prot.concat('://' + primeurl ), "urlShort": 'https://fcc-basejumps-abel1987.c9users.io/' + shortened, "Mensaje": "The url was NOT in the db "});
+                res.send({"url": prot.concat('://' + primeurl ), "urlShort": 'https://fcc-basejumps-abel1987.c9users.io/' + shortened, "Message": "The url was NOT in the db "});
 
             }
             else {
                 //If it is in the db we show it
-                res.send({"url": docs[0].url, "urlShort": docs[0].urlShort, "Mensaje": "The url was Already in the db "});
+                res.send({"url": docs[0].url, "urlShort": docs[0].urlShort, "Message": "The url was Already in the db "});
             }
            
         });
