@@ -38,7 +38,8 @@ app.get('/:prot://:primeurl', (req, res) => {
                 res.send({"url": docs[0].url, "urlShort": docs[0].urlShort, "Message": "The url was Already in the db "});
             }
            
-        });
+   
+     });
     }
     
 }); //Here we look for the url and if its not in our db we store it.
@@ -60,5 +61,4 @@ app.get('/:shortened', (req, res)=>{
 
 
 app.listen(process.env.PORT || 8080, () => console.log("Server running on port 8080 url: https://fcc-basejumps-abel1987.c9users.io" .green));
-
 
