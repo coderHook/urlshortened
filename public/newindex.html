@@ -1,5 +1,6 @@
 <html lang="en">
     <head><meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>URL Shortener Microservice</title>
     
     </head>
@@ -36,6 +37,13 @@ Mensaje: "The url was Already in the db "
 
 </div>
 
-
+<div class="right-container">
+    <form>
+        <label><h2></h2>Introduce the Url you want to shorten</h2></label>
+        <input type="text" id="url" size="50">
+        <input type="submit" value="Short your url" onclick="document.location.href = 'https://fcc-basejumps-abel1987.c9users.io/" + document.getElementById("url").value>
+    </form> 
+    
+</div>
 </body>
 </html>

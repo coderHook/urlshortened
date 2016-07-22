@@ -6,7 +6,7 @@ let _db;
 
 module.exports = {
     connect(){
-        client.connect('mongodb://abel1987-fcc_basejumps-3506899:27017/test', (err, db)=>{
+        client.connect('mongodb://test:test@ds023325.mlab.com:23325/myurl', (err, db)=>{
             
             if(err){
                 console.log("Error connection to mongo - check mongod connection");
