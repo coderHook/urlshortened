@@ -6,8 +6,6 @@ let app = express();
 let assert = require('assert');
 let mongoUtil = require('./mongoutil.js');
 
-var find = false;
- 
 mongoUtil.connect();
 
 app.use (express.static('public'));
