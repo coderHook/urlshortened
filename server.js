@@ -27,8 +27,8 @@ app.get('/:prot://:primeurl', (req, res) => {
             assert.equal(err, null);
             if(docs.length == 0){
                 //If its 0 we can add it because its not in the db
-                myUrl.insert({"url": prot.concat('://' + primeurl ), "urlShort": 'https://fcc-basejumps-abel1987.c9users.io/' + shortened});
-                res.send({"url": prot.concat('://' + primeurl ), "urlShort": 'https://fcc-basejumps-abel1987.c9users.io/' + shortened, "Message": "The url was NOT in the db "});
+                myUrl.insert({"url": prot.concat('://' + primeurl ), "urlShort": 'https://url-shortened-coderhook.herokuapp.com/' + shortened});
+                res.send({"url": prot.concat('://' + primeurl ), "urlShort": 'https://url-shortened-coderhook.herokuapp.com/' + shortened, "Message": "The url was NOT in the db "});
 
             }
             else {
@@ -46,7 +46,7 @@ app.get('/:shortened', (req, res)=>{
     let shortened = req.params.shortened;
     let myUrl = mongoUtil.myUrl();
     console.log(shortened);
-    myUrl.find({"urlShort": "https://fcc-basejumps-abel1987.c9users.io/"+shortened}).toArray(function (err, docs){
+    myUrl.find({"urlShort": "https://url-shortened-coderhook.herokuapp.com/"+shortened}).toArray(function (err, docs){
         
         assert.equal(err, null);
         
@@ -58,5 +58,5 @@ app.get('/:shortened', (req, res)=>{
 }); //Here if someone introduce a shorturl we look for it, and if we have it, we redirect to the correct url
 
 
-app.listen(process.env.PORT || 8080, () => console.log("Server running on port 8080 url: https://fcc-basejumps-abel1987.c9users.io" .green));
+app.listen(process.env.PORT || 8080, () => console.log("Server running on port 8080 url: https://fcc-basejumps-abel1987.c9users.io or https://url-shortened-coderhook.herokuapp.com/" .green));
 
