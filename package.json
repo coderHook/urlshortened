@@ -1,12 +1,18 @@
 {
   "name": "urlshortened",
   "version": "1.0.0",
-  "engines": {
-    "node": "5.3.x",
-    "npm": "3.3.x"
-  },
-  "description": "url shortened microservice from FCC challneges",
+  "description": "Url Shortened for the FCC challenges",
   "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "colors": "^1.1.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -15,16 +21,10 @@
     "type": "git",
     "url": "git+https://github.com/coderHook/urlshortened.git"
   },
-  "author": "coderHook",
+  "author": "Pedro A. Diaz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/coderHook/urlshortened/issues"
   },
-  "homepage": "https://github.com/coderHook/urlshortened#readme",
-  "dependencies": {
-    "assert": "^1.4.1",
-    "colors": "^1.1.2",
-    "express": "^4.14.0",
-    "mongodb": "^2.2.4"
-  }
+  "homepage": "https://github.com/coderHook/urlshortened#readme"
 }
